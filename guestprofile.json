@@ -1,0 +1,111 @@
+Profile":{  
+    "metadata":{  // TODO:  add this as utility object to be included with every resource response 
+        "version":0.1,
+        "createTime":"2015-12-01T13:36:47.550+1.00",
+        "modifiedTime":"2015-12-01T13:36:47.550+1.00",
+        "modifiedBy":"CRS",
+        "isDeleted":false,
+        "hmac":"6476df3aac780622368173fe6e768a2edc3932c8"
+    },
+    "id":"19640229-3015551212",
+    "person":{  
+        "personName":{  
+            "Surname":"Bradley",
+            "GivenName":"Austin",
+            "PreferredName":"Brad",
+            "Prefix":"Mr."
+        },
+        "addresses":[  
+            {  
+                "Type":"home",
+                "AddressLine":"1203 Maine Ave",
+                "BldgRoom":"Apt. 32A",
+                "CityName":"Baltimore",
+                "StateProv":"MD",
+                "PostalCode":"21202",
+                "CountryName":"US"
+            }
+        ],
+        "phones":[  
+            {  
+                "type":"home",
+                "number":"+1 410 555 1212",
+                "isPrimary":true
+            },
+            {  
+                "type":"mobile",
+                "number":"+1 240 555 4321",
+                "isPrimary":false
+            }
+        ],
+        "externalUrls":[  
+            "http://linkedin.com/in/azbradley101"
+        ], // TODO: add to profile spec note: backend should validate full links 
+        "emailAddresses":[  
+            {  
+                "emailType":"home",
+                "emailAddress":"azbradley101@tosspam.com",
+                "textFormat":"HTML",
+                "lastValidated":"2011-11-27",
+                "ShareMarketInd":true
+            },
+            {  
+                "emailType":"work",
+                "emailAddress":"azbradley103@gmail.com",
+                "textFormat":"HTML",
+                "lastValidated":"2011-11-27",
+                "ShareMarketInd":false
+            }
+        ],
+        "companyName":"My Biz Inc.", // TODO:        add to profile spec 
+        "businessTitle":"Sales Engineer", // TODO:        add to profile spec 
+        "birthDate":"1964-02-29", // TODO:        add to profile spec 
+        "preferences":[  
+            {  // TODO: add to profile spec - required for ADA compliance - consider sub-resource?
+                "name":"newspaper",
+                "value":"WSJ"
+            },
+            {  
+                "name":"miles",
+                "value":"Skyteam"
+            }
+        ],
+        "contactPerson":[  
+            {  
+                "relationship":"spouse",
+                "person":{  
+                    "personName":{  
+                        "surname":"Bradley",
+                        "givenName":"Amelia",
+                        "prefix":"Mrs."
+                    },
+                    "phones":[  
+                        {  
+                            "type":"home",
+                            "number":"+1 410 555 1212"
+                        },
+                        {  
+                            "type":"mobile",
+                            "number":"+1 240 555 4321"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "links":[  
+        {  
+            "rel":"self",
+            "href":"/profiles/{profile.id}"
+        },
+        {  
+            "rel":"loyaltyRecords",
+            "href":"/profiles/{profile.id}/loyalty"
+        },
+        {  
+            "rel":"affiliations",
+            "href":"/profiles/{profile.id}/affiliations"
+        }
+    ]
+}
+}

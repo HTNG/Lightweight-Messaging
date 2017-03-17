@@ -1,0 +1,6 @@
+
+{
+    "relationship": "is member of", // this is bi-directional -> "employs", perhaps add link to mapping
+    "companyID": "AAA",
+    "realationShip": "1234abcd"
+}

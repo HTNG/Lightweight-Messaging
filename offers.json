@@ -1,0 +1,39 @@
+ß// an offer context object is posted to /offers
+
+// offer context is posted and an offer collection is returned each with URL
+// PUT offer context would allow for changes to the context
+// "lite" approach gets /offers via basic GET request with query params (do not support Pii)
+
+//TODO: design offers context :
+* profile
+* special rate codes / affiliations
+** discount codes, corporate codes, event codes
+* date range (required)
+* roomType
+* hotel (this is part of the URL)
+
+{
+  "id": "",
+  "guestCount": 4,
+  "addOns": [],
+  "roomRates": [
+    {
+
+    }
+  ], //accommodates for price varying by day - TODO: add to wiki
+  "taxes": []
+  "dates":[ //date range
+      
+  ],
+  "expires": "", //datetime
+  "links": [
+    {
+      "rel": "self",
+      "href": "/offercriteria/1/offers/1"
+    },
+    {
+      "rel": "hotel",
+      "href": "/hotels/{hotel.code}}"
+    }
+  ]
+}

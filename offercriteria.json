@@ -1,0 +1,52 @@
+//TODO: define the concept of the "offer criteria", which is a combination of stay, search and profile data, sequence how the the context is created, and how it interacts with auth events / profile
+
+// The following payload is posted to the offercontext
+{
+  "hotelCode": "ABQBR01",
+  "roomTypeID": "",
+  "roomCount": "",
+  "guestCounts": [
+    {
+      "ageCategory": "Adult",
+      "count": 2
+    },
+    {
+      "ageCategory": "Child",
+      "count": 1
+    }
+  ],
+  "stay" : {
+    "arrivalDate" :"2015-12-25",
+    "departureDate" : "2015-12-31"
+  },
+  "guestProfile": null,
+  "rateCode": "",
+  "promoCode": "",
+  "groupCode": ""
+  "links": [
+    {
+      "rel": "self",
+      "href": "/offercriteria/1"
+    },
+    {
+      "rel": "offers",
+      "href": "/offercriteria/1/offers"
+    } 
+  ]
+}
+
+title "New Offer Search"
+autonumber
+Client->Client: Build criteria object
+Client->OfferCriteria : POST criteria object
+OfferCriteria-->Client : 201 with {URI}
+Client->Offers : GET {URI}/offers
+Offers-->Client : Offers Response
+
+title "Edit Existing Offer Search"
+autonumber
+Client->Client: Edit criteria object
+Client->OfferCriteria : PUT criteria object to {URI}
+OfferCriteria-->Client : 202
+Client->Offers : GET {URI}/offers
+Offers-->Client : Offers Response

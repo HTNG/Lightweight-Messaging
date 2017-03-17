@@ -1,0 +1,62 @@
+{
+    Code: "ABQBR01",
+    Name: "Banana Resorts Albuquerque",
+    CodeContext: "ACRS", // RES system name (this value is made up)
+    AreaId: "87106", //using zip code for now, may need further elaboration
+    BrandCode: "BR",
+    BrandName: "Banana Resorts",
+    ChainCode: "AH",
+    ChainName: "Acme Hotels",
+    CityCode: "ABQ",
+    CityName: "Albuquerque",
+    Address: {
+        AddresseeName: "Banana Resorts Albuquerque",
+        StreetNumber: "123 Banana Avenue",
+        BldgRoom: "Front Desk",
+        CityName: "Albuquerque",
+        CountyName: "Bernalillo",
+        StateProvince: "NM",
+        PostalCode: "87106",
+        CountryName: "United States"
+    },
+    ContactNumbers: [
+        {
+            Number: "+1 (505) 555-1234",
+            Type: "Business",
+            Location: "Concierge",
+            Remark: "9AM-5PM M-F"
+        },
+        {
+            Number: "+1 (505) 555-5678",
+            Type: "Fax"
+        }
+    ],
+    Position: "35.0433377,-106.6150972", //TODO: address elevation/altitude in the spec, identify existing format spec if possible
+    BestAvailableRate: 120.87,
+    links: [
+        {
+            "rel": "self",
+            "href": "/hotels/ABQBR01"
+        },
+        {
+            "rel": "BasicProperyInfo",
+            "href": "/hotels/{hotel.code}/propertyinfo"
+        },
+        {
+            "rel": "PointsOfInterest",
+            "href": "/pointsofinterest?hotel={hotel.code}&radius=" //TODO: hyperlink to point of interest resource, filtered?
+        },
+        {
+            "rel": "RoomTypes",
+            "href": "/hotels/{hotel.code}/roomtypes"
+        },
+        {
+            "rel": "Packages",
+            "href": "/hotels/{hotel.code}/packages"
+        },
+        {
+            "rel": "AddOnServices",
+            "href": "" // hyperlink to sub-resource
+        }
+    ]
+}
