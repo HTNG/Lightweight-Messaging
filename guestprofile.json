@@ -17,13 +17,17 @@ Profile":{
         },
         "addresses":[  
             {  
-                "Type":"home",
-                "AddressLine":"1203 Maine Ave",
-                "BldgRoom":"Apt. 32A",
+                "Type":"home", //TODO: remove Person Name from wiki spec
+                "Lines": [
+                    "1203 Maine Ave",
+                    "Apt. 32A"
+                ]
                 "CityName":"Baltimore",
-                "StateProv":"MD",
+                "CountyName": "Baltimore County",
+                "StateProvince":"MD",
                 "PostalCode":"21202",
-                "CountryName":"US"
+                "CountryCode":"US",
+                "isPrimary": true
             }
         ],
         "phones":[  
