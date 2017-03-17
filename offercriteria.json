@@ -30,7 +30,7 @@
     },
     {
       "rel": "offers",
-      "href": "/offercriteria/1/offers"
+      "href": "./offers"
     } 
   ]
 }

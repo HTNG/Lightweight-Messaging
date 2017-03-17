@@ -101,17 +101,17 @@ Profile":{
         ]
     },
     "links":[  
-        {  
+        {
             "rel":"self",
             "href":"/profiles/{profile.id}"
         },
         {  
             "rel":"loyaltyRecords",
-            "href":"/profiles/{profile.id}/loyalty"
+            "href":"./loyalty"
         },
         {  
             "rel":"affiliations",
-            "href":"/profiles/{profile.id}/affiliations"
+            "href":"./affiliations"
         }
     ]
 }

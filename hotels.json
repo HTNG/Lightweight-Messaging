@@ -40,7 +40,7 @@
         },
         {
             "rel": "BasicProperyInfo",
-            "href": "/hotels/{hotel.code}/propertyinfo"
+            "href": "./propertyinfo"
         },
         {
             "rel": "PointsOfInterest",
@@ -48,11 +48,11 @@
         },
         {
             "rel": "RoomTypes",
-            "href": "/hotels/{hotel.code}/roomtypes"
+            "href": "./roomtypes"
         },
         {
             "rel": "Packages",
-            "href": "/hotels/{hotel.code}/packages"
+            "href": "./packages"
         },
         {
             "rel": "AddOnServices",
