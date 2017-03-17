@@ -15,12 +15,12 @@ Profile":{
             "PreferredName":"Brad",
             "Prefix":"Mr."
             "Suffix": "III",
-            "Title": "Master of Ceremonies",
+            "Title": "President",
             "MiddleName": "Charles"
         },
         "addresses":[  
             {  
-                "Type":"home", //TODO: remove Person Name from wiki spec
+                "Type":"home", //TODO: remove AddresseeName from wiki spec, and add Address.Type
                 "Lines": [
                     "1203 Maine Ave",
                     "Apt. 32A"
