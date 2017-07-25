@@ -1,31 +1,102 @@
-ß// an offer context object is posted to /offers
-
-// offer context is posted and an offer collection is returned each with URL
-// PUT offer context would allow for changes to the context
-// "lite" approach gets /offers via basic GET request with query params (do not support Pii)
-
-//TODO: design offers context :
-* profile
-* special rate codes / affiliations
-** discount codes, corporate codes, event codes
-* date range (required)
-* roomType
-* hotel (this is part of the URL)
-
-{
-  "id": "",
-  "guestCount": 4,
-  "addOns": [],
-  "roomRates": [
-    {
-
+/** ================================================================================= **/
+/** This is a sample offer                                                            **/
+/** This example has a rate change for the 31st                                       **/
+/** ================================================================================= **/
+{ "offer" : {
+    "offerId" : "xyzzy",
+    "hotelId": "12345",
+    "stayDates": { "arrival": "2015-12-25", "departure": "2016-01-01" },
+    "totalGuests": 3,
+    "totalRooms": 1,
+    "currencyContext": {
+        "@currencyCode": "USD",
+        "@minorUnit": 2,
+        "@entity": "US"
+    },
+    "guests": [
+        {
+            "profile": {
+                "rel": "primaryGuest",
+                "link": "/profiles/{profileId}"
+            },
+            "guestFullName": "Mr. Abe Brown Jr."
+        },
+        {
+            "profile": {
+                "rel": "additionalGuest",
+                "link": "/profiles/{profileId}"
+            },
+            "guestFullName": "Mrs. Abigail Brown"
+        }
+    ],
+    "roomPackage": {
+        "roomType" : {
+            "link": {
+                "rel": "Hotel Room Type",
+                "href": "/hotels/{hotelId}/roomtypes/{roomTypeId}"
+            },
+            "roomTypeDesc : ": "Double Queen"
+        },
+        "roomRates": [
+            {
+                "dates": "2015-12-25/2015-12-30",
+                "price": 129.00,
+                "basis": "XMAS",
+                "taxes": [
+                    {"taxId": "city tax", "amount": 12.57},
+                    {"taxId": "stadium tax", "amount": 5.00}
+                ],
+                "fees" : [
+                    {"feeId": "resortFee", "amount": 12.00},
+                    {"feeId": "parkingFee", "amount": 28.00}
+                ],
+                "packageComponents": [
+                    {
+                        "componentID": "FBB",
+                        "description": "Free Breakfast Buffet",
+                        "price": 0.00,
+                        "taxes": [
+                            {"taxId": "fandBTax", "amount": 0.15}
+                        ]
+                    }
+                ],
+                "roomAdd-ons": [
+                    {
+                        "addonID": "rollaway",
+                        "description": "Rollaway Bed",
+                        "price": 3.00,
+                        "taxes": [
+                            {"salesTax": 0.15}
+                        ]
+                    }
+                ],
+                "rateRules": [
+                    {
+                        "rateRuleCode": "xmas",
+                        "description": "Must arrive on December 24th or 25th and depart before January 2nd"
+                    }
+                ]
+            }
+        ]
+    },
+    "additions": [
+        {
+            "addonID": "ticket",
+            "description": "ticket for New Years Party",
+            "price": 35.00,
+            "basis": "NYE"
+        }
+    ],
+    "preTaxOffer": 989.00,
+    "estimateTaxes": 77.00,
+    "estimateFees": 24.00,
+    "totalCost": 1066.00,
+    "guarantee": {
+        "cancelBy": "2015-12-25T16:00",
+        "penalty": 129.00,
+        "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
     }
-  ], //accommodates for price varying by day - TODO: add to wiki
-  "taxes": []
-  "dates":[ //date range
-      
-  ],
-  "expires": "", //datetime
+  }
   "links": [
     {
       "rel": "self",
@@ -37,3 +108,7 @@
     }
   ]
 }
+
+#TODO: discuss with group whether or not this level of breakdown is necessary for taxes, fees and roomrates. Does a shop and book UI require this complexity?
+
+
