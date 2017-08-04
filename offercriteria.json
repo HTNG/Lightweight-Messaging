@@ -6,14 +6,9 @@
   "roomTypeID": "",
   "roomCount": "",
   "guestCounts": [
-    {
-      "ageCategory": "Adult",
-      "count": 2
-    },
-    {
-      "ageCategory": "Child",
-      "count": 1
-    }
+    "adults": 1,
+    "children": 2,
+    "childAges": [3,5]
   ],
   "stay" : {
     "arrivalDate" :"2015-12-25",
