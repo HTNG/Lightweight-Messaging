@@ -5,11 +5,11 @@
   "hotelCode": "ABQBR01",
   "roomTypeID": "",
   "roomCount": "",
-  "guestCounts": [
+  "guestCounts": {
     "adults": 1,
     "children": 2,
     "childAges": [3,5]
-  ],
+  },
   "stay" : {
     "arrivalDate" :"2015-12-25",
     "departureDate" : "2015-12-31"
