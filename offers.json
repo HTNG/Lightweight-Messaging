@@ -97,6 +97,7 @@
         "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
     }
   }
+ ## - needs review by Scott M. (href doesnt look right, should be tracked to offer criteria, and offerID; links here may not be correct)
   "links": [
     {
       "rel": "self",
