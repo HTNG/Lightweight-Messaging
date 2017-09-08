@@ -1,5 +1,5 @@
 Profile":{  
-    "metadata":{  // TODO:  add this as utility object to be included with every resource response 
+    "metadata":{  
         "version":0.1,
         "createTime":"2015-12-01T13:36:47.550-7.00",
         "modifiedTime":"2015-12-01T13:36:47.550-7.00",
@@ -20,7 +20,7 @@ Profile":{
         },
         "addresses":[  
             {  
-                "Type":"home", //TODO: remove AddresseeName from wiki spec, and add Address.Type
+                "AddressType":"home",
                 "Lines": [
                     "1203 Maine Ave",
                     "Apt. 32A"
