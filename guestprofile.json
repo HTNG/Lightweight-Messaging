@@ -1,8 +1,8 @@
 Profile":{  
     "metadata":{  // TODO:  add this as utility object to be included with every resource response 
         "version":0.1,
-        "createTime":"2015-12-01T13:36:47.550+1.00",
-        "modifiedTime":"2015-12-01T13:36:47.550+1.00",
+        "createTime":"2015-12-01T13:36:47.550-7.00",
+        "modifiedTime":"2015-12-01T13:36:47.550-7.00",
         "modifiedBy":"CRS",
         "isDeleted":false,
         "hmac":"6476df3aac780622368173fe6e768a2edc3932c8"
