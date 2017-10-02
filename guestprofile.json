@@ -47,7 +47,7 @@ Profile":{
         ],
         "externalUrls":[  
             "http://linkedin.com/in/azbradley101"
-        ], // TODO: add to profile spec note: backend should validate full links 
+        ], 
         "emailAddresses":[  
             {  
                 "emailType":"home",
@@ -64,11 +64,11 @@ Profile":{
                 "ShareMarketInd":false
             }
         ],
-        "companyName":"My Biz Inc.", // TODO:        add to profile spec 
-        "businessTitle":"Sales Engineer", // TODO:        add to profile spec 
-        "birthDate":"1964-02-29", // TODO:        add to profile spec 
+        "companyName":"My Biz Inc.", 
+        "businessTitle":"Sales Engineer",
+        "birthDate":"1964-02-29",
         "preferences":[  
-            {  // TODO: add to profile spec - required for ADA compliance - consider sub-resource?
+            {  
                 "name":"newspaper",
                 "value":"WSJ"
             },
