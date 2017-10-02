@@ -103,7 +103,7 @@ Profile":{
     "links":[  
         {
             "rel":"self",
-            "href":"/profiles/{profile.id}"
+            "href":"/profiles/19640229-3015551212"
         },
         {  
             "rel":"loyaltyRecords",
