@@ -1,1 +1,116 @@
+/** ================================================================================= **/
+/** This is a sample reservation message/record                                       **/
+/** This example has a rate change for the 31st                                      **/
+/** ================================================================================= **/
+/** need to check that this lines up with Offer/Offers (called "reserved" herein), typically look at 1 offer **/
+{ "reservation" : {
+    "metadata" : {
+        "version": 0.1,
+        "createTime" : "2015-12-01T13:36:47.550+1.00",
+        "modifiedTime" : "2015-12-01T13:36:47.550+1.00",
+        "modifiedBy" : "CRS",
+        "isDeleted" : false,
+        "hmac" : "6476df3aac780622368173fe6e768a2edc3932c8"
+    },
+    "reservationID": "1234567890123456",
+    "guestLastName" : "Brown",
+    "guestID" : "30dd879c-ee2f-11db-8314-0800200c9a66",
+    "isCancelled" : "false",
+    "groupReservationId" : "",
+    "hotelID": "mhbwi",
+    "hotelName": "My Hotel at Baltimore Airport",
+    "stayDates": {
+        "arrival": "2015-12-25",
+        "departure": "2016-01-01"
+    },
+    "reserved": 
+    [
+        {
+            "roomPackage": {
+                "guestCount": 1, 
+                "guests": [
+                    {
+                        "profileID": "30dd879c-ee2f-11db-8314-0800200c9a66",
+                        "guestFullName": "Mr. Abe Brown Jr."
+                    }
+                ],
+                "roomTypeID": "dq",
+                "roomType : ": "Double Queen",
+                "packageComponents": [
+                    {
+                        "componentID": "FBB",
+                        "description": "Free Breakfast Buffet",
+                        "price": "$3.00",
+                        "taxCodeIndex": "54"
+                    }
+                ],
+                "roomAdd-ons": [
+                    {
+                        "addonID": "rollaway",
+                        "description": "Rollaway Bed",
+                        "price": "$3.00",
+                        "taxCodeIndex": "27"
+                    }
+                ],
+                "roomRates": [
+                    {
+                        "startDate": "2015-12-25",
+                        "endDate": "2015-12-30",
+                        "price": "$129.00",
+                        "basis": "XMAS",
+                        "taxCodeIndex": "27", //unlikely to use this (check wiki)//
+                        "rateRules": [
+                            {
+                                "rateRuleCode": "xmas",
+                                "description": "Must arrive on December 24th or 25th and depart before January 2nd"
+                            }
+                        ]
+                    },
+                    {
+                        "startDate": "2015-12-31",
+                        "endDate": "2015-01-01",
+                        "price": "$159.00",
+                        "basis": "NYE",
+                        "taxCodeIndex": "27", //unlikely to use this (check wiki)//
+                        "rateRules": [
+                            {
+                                "rateRuleCode": "NYE",
+                                "description": "Must stay on December 31st"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "additions": [
+        {
+            "addonID": "ticket",
+            "description": "ticket for New Years Party",
+            "price": "$35.00",
+            "taxCodeIndex": "99" //unlikely to use this (check wiki)//
+        }
+    ],
+    "totalGuests": 1,
+    "totalRooms": 1,
+    "currency": {
+        "currencyCode": "USD",
+        "decimalPlaces": 2
+    },
+    "preTaxPrice": "$989.00",
+    "estimateTax": "$77.00",
+    "totalCost": "$1066.00",
+    "guarantee": {
+        "cancelBy": "2015-12-25T16:00",
+        "penalty": "$129.00",
+        "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
+    },
+    "deposits": [
+        { 
+            "depositAmount": "$0.00",
+            "dateReceived": ""
+        }
+    ]
+}
+}
 
