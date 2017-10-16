@@ -6,13 +6,7 @@
     "offerId" : "xyzzy",
     "hotelId": "12345",
     "stayDates": { "arrival": "2015-12-25", "departure": "2016-01-01" },
-    "totalGuests": 3,
     "totalRooms": 1,
-    "currencyContext": {
-        "@currencyCode": "USD",
-        "@minorUnit": 2,
-        "@entity": "US"
-    },
     "guests": [
         {
             "profile": {
@@ -30,6 +24,20 @@
         }
     ],
     "roomPackage": {
+        "packageId": "1234567",
+        "packageCode": "XMAS2017"
+        "description": "Christmas holiday package with free breakfast and discount parking.",
+        "guestCounts": {
+            "adults": 1,
+            "children": 2,
+            "childAges": [3,5]
+        },
+        "guests": [
+            {
+                "profileID": "30dd879c-ee2f-11db-8314-0800200c9a66",
+                "guestFullName": "Mr. Abe Brown Jr."
+            }
+        ],
         "roomType" : {
             "link": {
                 "rel": "Hotel Room Type",
@@ -40,34 +48,36 @@
         "roomRates": [
             {
                 "dates": "2015-12-25/2015-12-30",
-                "price": 129.00,
+
                 "basis": "XMAS",
-                "taxes": [
-                    {"taxId": "city tax", "amount": 12.57},
-                    {"taxId": "stadium tax", "amount": 5.00}
-                ],
-                "fees" : [
-                    {"feeId": "resortFee", "amount": 12.00},
-                    {"feeId": "parkingFee", "amount": 28.00}
-                ],
+                "packagePrice": 125.00,
                 "packageComponents": [
                     {
-                        "componentID": "FBB",
+                        "componentId": "ROOM",
+                        "description": "Hotel Room Per Night",
+                        "price": 90.00
+                    },
+                    {
+                        "componentId": "FBB",
                         "description": "Free Breakfast Buffet",
-                        "price": 0.00,
-                        "taxes": [
-                            {"taxId": "fandBTax", "amount": 0.15}
-                        ]
+                        "price": 0.00
+                    },
+                    {
+                        "componentId": "resortFee",
+                        "description": "Nightly Resort Fee",
+                        "price": 5.00
+                    },
+                    {
+                        "componentId": "parking",
+                        "description": "Daily Parking Fee",
+                        "price": 25.00
                     }
                 ],
                 "roomAdd-ons": [
                     {
                         "addonID": "rollaway",
                         "description": "Rollaway Bed",
-                        "price": 3.00,
-                        "taxes": [
-                            {"salesTax": 0.15}
-                        ]
+                        "price": 3.00
                     }
                 ],
                 "rateRules": [
@@ -84,9 +94,15 @@
             "addonID": "ticket",
             "description": "ticket for New Years Party",
             "price": 35.00,
-            "basis": "NYE"
+            "basis": "NYE",
+            "quantity": 1
         }
     ],
+    "currencyContext": {
+        "@currencyCode": "USD",
+        "@minorUnit": 2,
+        "@entity": "US"
+    },
     "preTaxOffer": 989.00,
     "estimateTaxes": 77.00,
     "estimateFees": 24.00,
@@ -95,23 +111,21 @@
         "cancelBy": "2015-12-25T16:00",
         "penalty": 129.00,
         "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
-    }
-  }
- ## - needs review by Scott M. (href doesnt look right, should be tracked to offer criteria, and offerID; links here may not be correct)
- ## - needs a link to offerCriteria
- ## - Decision: Create an Offers STUB in addition to this message, which is an OFFER
-  "links": [
+    },
+    "links": [
     {
       "rel": "self",
-      "href": "/offercriteria/1/offers/1"
+      "href": "/offercriteria/{offerCriteriaId}/offers/{offerId}"
     },
     {
       "rel": "hotel",
       "href": "/hotels/{hotel.code}}"
+    },
+    {
+        "rel": "offerCriteria",
+        "href": "/offercriteria/{offerCriteriaId}"
     }
   ]
 }
-
-#TODO: discuss with group whether or not this level of breakdown is necessary for taxes, fees and roomrates. Does a shop and book UI require this complexity?
 
 
