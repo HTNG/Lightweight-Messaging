@@ -114,14 +114,14 @@
     "estimateTax": "$77.00",
     "totalCost": "$1066.00",
     "guarantee": {
-        "cancelBy": "2015-12-25T16:00-5:00",
+        "cancelBy": "2015-12-25T16:00-05:00",
         "penalty": "$129.00",
         "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
     },
     "deposits": [
         { 
             "depositAmount": 100.00,
-            "dateReceived": "2015-12-01T16:00-5:00"
+            "dateReceived": "2015-12-01T16:00-05:00"
         }
     ]
 }
