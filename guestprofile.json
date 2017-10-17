@@ -1,11 +1,25 @@
-Profile":{  
+{
     "metadata":{  
         "version":0.1,
         "createTime":"2015-12-01T13:36:47.550-7.00",
         "modifiedTime":"2015-12-01T13:36:47.550-7.00",
         "modifiedBy":"CRS",
         "isDeleted":false,
-        "hmac":"6476df3aac780622368173fe6e768a2edc3932c8"
+        "hmac":"6476df3aac780622368173fe6e768a2edc3932c8",
+        "links":[
+            {
+                "rel":"self",
+                "href":"/profiles/19640229-3015551212"
+            },
+            {
+                "rel":"loyaltyRecords",
+                "href":"./loyalty"
+            },
+            {
+                "rel":"affiliations",
+                "href":"./affiliations"
+            }
+        ]
     },
     "id":"19640229-3015551212",
     "person":{  
@@ -13,7 +27,7 @@ Profile":{
             "Surname":"Bradley",
             "GivenName":"Austin",
             "PreferredName":"Brad",
-            "Prefix":"Mr."
+            "Prefix":"Mr.",
             "Suffix": "III",
             "Title": "President",
             "MiddleName": "Charles"
@@ -24,7 +38,7 @@ Profile":{
                 "Lines": [
                     "1203 Maine Ave",
                     "Apt. 32A"
-                ]
+                ],
                 "CityName":"Baltimore",
                 "CountyName": "Baltimore County",
                 "StateProvince":"MD",
@@ -99,20 +113,5 @@ Profile":{
                 }
             }
         ]
-    },
-    "links":[  
-        {
-            "rel":"self",
-            "href":"/profiles/19640229-3015551212"
-        },
-        {  
-            "rel":"loyaltyRecords",
-            "href":"./loyalty"
-        },
-        {  
-            "rel":"affiliations",
-            "href":"./affiliations"
-        }
-    ]
-}
+    }
 }

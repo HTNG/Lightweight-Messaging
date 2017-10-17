@@ -6,19 +6,23 @@
         "modifiedBy":"CRS",
         "isDeleted":false,
         "hmac":"6476df3aac780622368173fe6e768a2edc3932c8",
-        "pagination": {
-        
-        }
-  },
-  "offers": [],
-  "links":[  
-        {
-            "rel":"self",
-            "href":"."
+        "paging": {
+            "pageSize": 2,
+            "offset": 3,
+            "totalRecords": 10
         },
-        {  
-            "rel":"offerCriteria",
-            "href":"."
-        }
-    ]
+        "links":[
+              {
+                  "rel":"self",
+                  "href":"."
+              },
+              {
+                  "rel":"offerCriteria",
+                  "href":"."
+              }
+        ]
+  },
+  "offers": [
+
+  ]
 }

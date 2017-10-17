@@ -6,7 +6,25 @@
             "pageSize": 2,
             "offset": 3,
             "totalRecords": 10
-        }
+        },
+        "links": [
+            {
+                "rel": "self",
+                "href": "/affilliations?companyId=23e34&offset=3&pageSize=2"
+            },
+            {
+                "rel": "previous",
+                "href": "/affilliations?companyId=23e34&offset=1&pageSize=2"
+            },
+            {
+                "rel": "next",
+                "href": "/affilliations?companyId=23e34&offset=5&pageSize=2"
+            },
+            {
+                "rel": "last",
+                "href": "/affilliations?companyId=23e34&offset=9&pageSize=2"
+            }
+        ]
     },
     "affiliations": [
         {
@@ -32,24 +50,6 @@
                     "value": "827464"
                 }
             ]
-        }
-    ],
-    "links": [
-        {
-            "rel": "self",
-            "href": "/affilliations?companyId=23e34&offset=3&pageSize=2"
-        },
-        {
-            "rel": "previous",
-            "href": "/affilliations?companyId=23e34&offset=1&pageSize=2"
-        },
-        {
-            "rel": "next",
-            "href": "/affilliations?companyId=23e34&offset=5&pageSize=2"
-        },
-        {
-            "rel": "last",
-            "href": "/affilliations?companyId=23e34&offset=9&pageSize=2"
         }
     ]
 }

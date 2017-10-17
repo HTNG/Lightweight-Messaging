@@ -2,7 +2,8 @@
 /** This is a sample offer                                                            **/
 /** This example has a rate change for the 31st                                       **/
 /** ================================================================================= **/
-{ "offer" : {
+{
+    "offer" : {
     "offerId" : "xyzzy",
     "hotelId": "12345",
     "stayDates": { "arrival": "2015-12-25", "departure": "2016-01-01" },
@@ -113,19 +114,19 @@
         "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
     },
     "links": [
-    {
-      "rel": "self",
-      "href": "/offercriteria/{offerCriteriaId}/offers/{offerId}"
-    },
-    {
-      "rel": "hotel",
-      "href": "/hotels/{hotel.code}}"
-    },
-    {
-        "rel": "offerCriteria",
-        "href": "/offercriteria/{offerCriteriaId}"
-    }
-  ]
+        {
+          "rel": "self",
+          "href": "/offercriteria/{offerCriteriaId}/offers/{offerId}"
+        },
+        {
+          "rel": "hotel",
+          "href": "/hotels/{hotel.code}}"
+        },
+        {
+            "rel": "offerCriteria",
+            "href": "/offercriteria/{offerCriteriaId}"
+        }
+    ]
 }
 
 

@@ -1,0 +1,34 @@
+{
+	"metadata": {
+		"version": 0.1,
+		"createTime": "2015-12-01T13:36:47.550-7.00",
+		"modifiedTime": "2015-12-01T13:36:47.550-7.00",
+		"modifiedBy": "CRS",
+		"isDeleted": false,
+		"hmac": "6476df3aac780622368173fe6e768a2edc3932c8"
+	},
+	"location": {
+		"id": "123123-1231-1231",
+		"shortDescription": "BWI",
+		"briefDescription": "Baltimore/Washington International Thurgood Marshall Airport",
+		"longDescription": "Baltimore/Washington International Thurgood Marshall Airport (IATA: BWI, ICAO: KBWI, FAA LID: BWI) is currently the largest, by passenger count, of three major airports serving the Baltimore/Washington Metropolitan Area in the United States, the other two being Ronald Reagan Washington National Airport and Washington Dulles International Airport. It is commonly referred to as BWI or BWI Marshall. Located next to the CDP Linthicum[3] in northern unincorporated Anne Arundel County, Maryland, the airport is about 10 miles (16 km) south of Baltimore[4] and 32 miles (51 km) northeast of Washington, D.C.[5] The airport is named after Thurgood Marshall, a Baltimore native who was the first African American to serve on the Supreme Court of the United States.",
+		"category": "Airport",
+		"geoCoordinates": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [39.1774, 76.6684]
+			}
+		},
+		"links": [
+			{
+				"rel": "Website",
+				"href": "https://bwi.org"
+			},
+			{
+				"rel": "Nearby Hotels",
+				"href": "/hotels?lat=39.1774&long=76.6684&radius=5&units=mi"
+			}
+		]
+	}
+}
