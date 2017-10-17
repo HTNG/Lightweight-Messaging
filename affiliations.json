@@ -1,0 +1,55 @@
+{
+    "metadata": {
+        "version": 0.1,
+        "hmac": "6476df3aac780622368173fe6e768a2edc3932c8",
+        "paging": {
+            "pageSize": 2,
+            "offset": 3,
+            "totalRecords": 10
+        }
+    },
+    "affiliations": [
+        {
+            "personID": "xmp-20770",
+            "relationship": "is member of",
+            "companyID": "AAA",
+            "inverseRelationship": "has member",
+            "details": [
+                {
+                    "name": "memberId",
+                    "value": "1232-122132-1DASD2"
+                }
+            ]
+        },
+        {
+            "personID": "xmp-20770",
+            "relationship": "is employee of",
+            "companyID": "Delaware North",
+            "inverseRelationship": "has employee",
+            "details": [
+                {
+                    "name": "employeeNumber",
+                    "value": "827464"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "rel": "self",
+            "href": "/affilliations?companyId=23e34&offset=3&pageSize=2"
+        },
+        {
+            "rel": "previous",
+            "href": "/affilliations?companyId=23e34&offset=1&pageSize=2"
+        },
+        {
+            "rel": "next",
+            "href": "/affilliations?companyId=23e34&offset=5&pageSize=2"
+        },
+        {
+            "rel": "last",
+            "href": "/affilliations?companyId=23e34&offset=9&pageSize=2"
+        }
+    ]
+}
