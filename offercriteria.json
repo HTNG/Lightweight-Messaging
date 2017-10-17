@@ -1,47 +1,47 @@
-//TODO: define the concept of the "offer criteria", which is a combination of stay, search and profile data, sequence how the the context is created, and how it interacts with auth events / profile
-
-// The following payload is posted to the offercontext
 {
-  "hotelCode": "ABQBR01",
-  "roomTypeID": "",
-  "roomCount": "",
-  "guestCounts": {
-    "adults": 1,
-    "children": 2,
-    "childAges": [3,5]
-  },
-  "stay" : {
-    "arrivalDate" :"2015-12-25",
-    "departureDate" : "2015-12-31"
-  },
-  "guestProfile": null,
-  "rateCode": "",
-  "promoCode": "",
-  "groupCode": ""
-  "links": [
-    {
-      "rel": "self",
-      "href": "/offercriteria/1"
+    "metadata": {
+        "links": [
+            {
+                "rel": "self",
+                "href": "/offercriteria/1"
+            },
+            {
+                "rel": "offers",
+                "href": "/offercriteria/1/offers"
+            }
+        ]
     },
-    {
-      "rel": "offers",
-      "href": "./offers"
-    } 
-  ]
+    "offerCriteria": {
+        "id": 1,
+        "hotelCode": "ABQBR01",
+        "roomTypeID": "",
+        "roomCount": 1,
+        "guestCounts": {
+            "adults": 1,
+            "children": 2,
+            "childAges": [
+                3,
+                5
+            ]
+        },
+        "stay": {
+            "arrivalDate": "2015-12-25",
+            "departureDate": "2015-12-31"
+        },
+        "guestProfile": {
+            "rel": "Profile",
+            "href": "/guestprofiles/{guestProfile.id}"
+        },
+        "rateCode": "AARP",
+        "promoCode": "DEC10",
+        "groupCode": "HTNG2017",
+        "accessible": true,
+        "amenities": [
+            { "name": "smoking", "value": "false" },
+            { "name": "petsAllowed", "value": "false" },
+            { "name": "bedCount", "value": "2" },
+            { "name": "bedTypeCode", "value": "7" },
+            { "name": "roomViewTypeCode", "value": "2" }
+        ],
+    }
 }
-
-title "New Offer Search"
-autonumber
-Client->Client: Build criteria object
-Client->OfferCriteria : POST criteria object
-OfferCriteria-->Client : 201 with {URI}
-Client->Offers : GET {URI}/offers
-Offers-->Client : Offers Response
-
-title "Edit Existing Offer Search"
-autonumber
-Client->Client: Edit criteria object
-Client->OfferCriteria : PUT criteria object to {URI}
-OfferCriteria-->Client : 202
-Client->Offers : GET {URI}/offers
-Offers-->Client : Offers Response
