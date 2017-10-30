@@ -3,15 +3,13 @@
 
     },
     "hotels" : [
-      "hotel": {
-          "HotelID" : "123456-0987654-102938"
+        {
+          "ID" : "123456-0987654-102938"
           "BestAvailableRate": [120.87],
           "Code": "ABQBR01",
           "Name": "Banana Resorts Albuquerque",
           "CodeContext": "ACRS",
-          // RES system name (this value is made up)
           "AreaId": "87106",
-          //using zip code for now, may need further elaboration
           "BrandCode": "BR",
           "BrandName": "Banana Resorts",
           "ChainCode": "AH",
@@ -59,7 +57,7 @@
           },
           {
               "rel": "PointsOfInterest",
-              "href": "/pointsofinterest?hotel={hotel.code}&radius=" //TODO: hyperlink to point of interest resource, filtered?
+              "href": "/pointsofinterest?hotel={hotel.code}&radius=20&units=mi" 
           },
           {
               "rel": "RoomTypes",
@@ -71,7 +69,7 @@
           },
           {
               "rel": "AddOnServices",
-              "href": "" // hyperlink to sub-resource
+              "href": "./addonservices"
           }
       ]
   }
