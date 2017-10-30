@@ -108,11 +108,11 @@
     "estimateTaxes": 77.00,
     "estimateFees": 24.00,
     "totalCost": 1066.00,
-    "guarantee": {
+    "cancellationPolicies": [{
         "cancelBy": "2015-12-25T16:00",
         "penalty": 129.00,
         "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
-    },
+    }],
     "links": [
         {
           "rel": "self",
