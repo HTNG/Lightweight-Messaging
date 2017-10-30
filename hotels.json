@@ -4,7 +4,7 @@
     },
     "hotels" : [
         {
-          "ID" : "123456-0987654-102938"
+          "ID" : "123456-0987654-102938",
           "BestAvailableRate": [120.87],
           "Code": "ABQBR01",
           "Name": "Banana Resorts Albuquerque",
