@@ -1,77 +1,91 @@
 {
-    "metadata": {
-
+    "metadata":{
+        "version":0.1,
+        "createTime":"2015-12-01T13:36:47.550-7.00",
+        "modifiedTime":"2015-12-01T13:36:47.550-7.00",
+        "modifiedBy":"CRS",
+        "isDeleted":false,
+        "hmac":"6476df3aac780622368173fe6e768a2edc3932c8",
+        "paging": {
+            "pageSize": 2,
+            "offset": 3,
+            "totalRecords": 10
+        },
+        "links": []
     },
-    "hotels" : [
+    "hotels":[
         {
-          "ID" : "123456-0987654-102938",
-          "BestAvailableRate": [120.87],
-          "Code": "ABQBR01",
-          "Name": "Banana Resorts Albuquerque",
-          "CodeContext": "ACRS",
-          "AreaId": "87106",
-          "BrandCode": "BR",
-          "BrandName": "Banana Resorts",
-          "ChainCode": "AH",
-          "ChainName": "Acme Hotels",
-          "CityCode": "ABQ",
-          "CityName": "Albuquerque",
-          "Address": {
-              "AddresseeName": "Banana Resorts Albuquerque",
-              "StreetNumber": "123 Banana Avenue",
-              "BldgRoom": "Front Desk",
-              "CityName": "Albuquerque",
-              "CountyName": "Bernalillo",
-              "StateProvince": "NM",
-              "PostalCode": "87106",
-              "CountryName": "United States"
-          },
-          "ContactNumbers": [
-              {
-                  "Number": "+1 (505) 555-1234",
-                  "Type": "Business",
-                  "Location": "Concierge",
-                  "Remark": "9AM-5PM M-F"
-              },
-              {
-                  "Number": "+1 (505) 555-5678",
-                  "Type": "Fax"
-              }
-          ],
-          "Position" : {
-             "type": "Feature",
-             "geometry": {
-                "type": "Point",
-                "coordinates": ["35.0433377,-106.6150972"]
-             },
-          },
-
-      "links": [
-          {
-              "rel": "self",
-              "href": "/hotels/ABQBR01"
-          },
-          {
-              "rel": "BasicProperyInfo",
-              "href": "./propertyinfo"
-          },
-          {
-              "rel": "PointsOfInterest",
-              "href": "/pointsofinterest?hotel={hotel.code}&radius=20&units=mi" 
-          },
-          {
-              "rel": "RoomTypes",
-              "href": "./roomtypes"
-          },
-          {
-              "rel": "Packages",
-              "href": "./packages"
-          },
-          {
-              "rel": "AddOnServices",
-              "href": "./addonservices"
-          }
-      ]
-  }
- ]
+            "id":"123456-0987654-102938",
+            "bestAvailableRate":[
+                120.87
+            ],
+            "code":"ABQBR01",
+            "name":"Banana Resorts Albuquerque",
+            "codeContext":"ACRS",
+            "areaId":"87106",
+            "brandCode":"BR",
+            "brandName":"Banana Resorts",
+            "chainCode":"AH",
+            "chainName":"Acme Hotels",
+            "cityCode":"ABQ",
+            "cityName":"Albuquerque",
+            "address":{
+                "addresseeName":"Banana Resorts Albuquerque",
+                "streetNumber":"123 Banana Avenue",
+                "bldgRoom":"Front Desk",
+                "cityName":"Albuquerque",
+                "countyName":"Bernalillo",
+                "stateProvince":"NM",
+                "postalCode":"87106",
+                "countryName":"United States"
+            },
+            "contactNumbers":[
+                {
+                    "number":"+1 (505) 555-1234",
+                    "type":"Business",
+                    "location":"Concierge",
+                    "remark":"9AM-5PM M-F"
+                },
+                {
+                    "number":"+1 (505) 555-5678",
+                    "type":"Fax"
+                }
+            ],
+            "position":{
+                "type":"Feature",
+                "geometry":{
+                    "type":"Point",
+                    "coordinates":[
+                        "35.0433377,-106.6150972"
+                    ]
+                }
+            },
+            "links":[
+                {
+                    "rel":"self",
+                    "href":"/hotels/ABQBR01"
+                },
+                {
+                    "rel":"BasicProperyInfo",
+                    "href":"./propertyinfo"
+                },
+                {
+                    "rel":"PointsOfInterest",
+                    "href":"/pointsofinterest?hotel={hotel.code}&radius=20&units=mi"
+                },
+                {
+                    "rel":"RoomTypes",
+                    "href":"./roomtypes"
+                },
+                {
+                    "rel":"Packages",
+                    "href":"./packages"
+                },
+                {
+                    "rel":"AddOnServices",
+                    "href":"./addonservices"
+                }
+            ]
+        }
+    ]
 }

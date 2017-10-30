@@ -1,132 +1,145 @@
-/** ================================================================================= **/
-/** This is a sample offer                                                            **/
-/** This example has a rate change for the 31st                                       **/
-/** ================================================================================= **/
 {
-    "offer" : {
-    "offerId" : "xyzzy",
-    "hotelId": "12345",
-    "stayDates": { "arrival": "2015-12-25", "departure": "2016-01-01" },
-    "totalRooms": 1,
-    "guests": [
-        {
-            "profile": {
-                "rel": "primaryGuest",
-                "link": "/profiles/{profileId}"
-            },
-            "guestFullName": "Mr. Abe Brown Jr."
-        },
-        {
-            "profile": {
-                "rel": "additionalGuest",
-                "link": "/profiles/{profileId}"
-            },
-            "guestFullName": "Mrs. Abigail Brown"
-        }
-    ],
-    "roomPackage": {
-        "packageId": "1234567",
-        "packageCode": "XMAS2017",
-        "description": "Christmas holiday package with free breakfast and discount parking.",
-        "guestCounts": {
-            "adults": 1,
-            "children": 2,
-            "childAges": [3,5]
-        },
-        "guests": [
+    "metadata": {
+        "version": 0.1,
+        "createTime": "2015-12-01T13:36:47.550-7.00",
+        "modifiedTime": "2015-12-01T13:36:47.550-7.00",
+        "modifiedBy": "CRS",
+        "isDeleted": false,
+        "hmac": "6476df3aac780622368173fe6e768a2edc3932c8",
+        "links": [
             {
-                "profileID": "30dd879c-ee2f-11db-8314-0800200c9a66",
-                "guestFullName": "Mr. Abe Brown Jr."
-            }
-        ],
-        "roomType" : {
-            "link": {
-                "rel": "Hotel Room Type",
-                "href": "/hotels/{hotelId}/roomtypes/{roomTypeId}"
+                "rel": "self",
+                "href": "/offercriteria/{offerCriteriaId}/offers/{offerId}"
             },
-            "roomTypeDesc : ": "Double Queen"
-        },
-        "roomRates": [
             {
-                "dates": "2015-12-25/2015-12-30",
-
-                "basis": "XMAS",
-                "packagePrice": 125.00,
-                "packageComponents": [
-                    {
-                        "componentId": "ROOM",
-                        "description": "Hotel Room Per Night",
-                        "price": 90.00
-                    },
-                    {
-                        "componentId": "FBB",
-                        "description": "Free Breakfast Buffet",
-                        "price": 0.00
-                    },
-                    {
-                        "componentId": "resortFee",
-                        "description": "Nightly Resort Fee",
-                        "price": 5.00
-                    },
-                    {
-                        "componentId": "parking",
-                        "description": "Daily Parking Fee",
-                        "price": 25.00
-                    }
-                ],
-                "roomAdd-ons": [
-                    {
-                        "addonID": "rollaway",
-                        "description": "Rollaway Bed",
-                        "price": 3.00
-                    }
-                ],
-                "rateRules": [
-                    {
-                        "rateRuleCode": "xmas",
-                        "description": "Must arrive on December 24th or 25th and depart before January 2nd"
-                    }
-                ]
+                "rel": "hotel",
+                "href": "/hotels/{hotel.code}}"
+            },
+            {
+                "rel": "offerCriteria",
+                "href": "/offercriteria/{offerCriteriaId}"
             }
         ]
     },
-    "additions": [
-        {
-            "addonID": "ticket",
-            "description": "ticket for New Years Party",
-            "price": 35.00,
-            "basis": "NYE",
-            "quantity": 1
-        }
-    ],
-    "currencyContext": {
-        "@currencyCode": "USD",
-        "@minorUnit": 2,
-        "@entity": "US"
-    },
-    "preTaxOffer": 989.00,
-    "estimateTaxes": 77.00,
-    "estimateFees": 24.00,
-    "totalCost": 1066.00,
-    "cancellationPolicies": [{
-        "cancelBy": "2015-12-25T16:00",
-        "penalty": 129.00,
-        "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
-    }],
-    "links": [
-        {
-          "rel": "self",
-          "href": "/offercriteria/{offerCriteriaId}/offers/{offerId}"
+    "offer": {
+        "offerId": "xyzzy",
+        "hotelId": "12345",
+        "stayDates": {
+            "arrival": "2015-12-25",
+            "departure": "2016-01-01"
         },
-        {
-          "rel": "hotel",
-          "href": "/hotels/{hotel.code}}"
+        "totalRooms": 1,
+        "guests": [
+            {
+                "profile": {
+                    "rel": "primaryGuest",
+                    "link": "/profiles/{profileId}"
+                },
+                "guestFullName": "Mr. Abe Brown Jr."
+            },
+            {
+                "profile": {
+                    "rel": "additionalGuest",
+                    "link": "/profiles/{profileId}"
+                },
+                "guestFullName": "Mrs. Abigail Brown"
+            }
+        ],
+        "roomPackage": {
+            "packageId": "1234567",
+            "packageCode": "XMAS2017",
+            "description": "Christmas holiday package with free breakfast and discount parking.",
+            "guestCounts": {
+                "adults": 1,
+                "children": 2,
+                "childAges": [
+                    3,
+                    5
+                ]
+            },
+            "guests": [
+                {
+                    "profileID": "30dd879c-ee2f-11db-8314-0800200c9a66",
+                    "guestFullName": "Mr. Abe Brown Jr."
+                }
+            ],
+            "roomType": {
+                "link": {
+                    "rel": "Hotel Room Type",
+                    "href": "/hotels/{hotelId}/roomtypes/{roomTypeId}"
+                },
+                "roomTypeDesc : ": "Double Queen"
+            },
+            "roomRates": [
+                {
+                    "dates": "2015-12-25/2015-12-30",
+                    "basis": "XMAS",
+                    "packagePrice": 125.00,
+                    "packageComponents": [
+                        {
+                            "componentId": "ROOM",
+                            "description": "Hotel Room Per Night",
+                            "price": 90.00
+                        },
+                        {
+                            "componentId": "FBB",
+                            "description": "Free Breakfast Buffet",
+                            "price": 0.00
+                        },
+                        {
+                            "componentId": "resortFee",
+                            "description": "Nightly Resort Fee",
+                            "price": 5.00
+                        },
+                        {
+                            "componentId": "parking",
+                            "description": "Daily Parking Fee",
+                            "price": 25.00
+                        }
+                    ],
+                    "roomAdd-ons": [
+                        {
+                            "addonID": "rollaway",
+                            "description": "Rollaway Bed",
+                            "price": 3.00
+                        }
+                    ],
+                    "rateRules": [
+                        {
+                            "rateRuleCode": "xmas",
+                            "description": "Must arrive on December 24th or 25th and depart before January 2nd"
+                        }
+                    ]
+                }
+            ]
         },
-        {
-            "rel": "offerCriteria",
-            "href": "/offercriteria/{offerCriteriaId}"
-        }
-    ]
+        "additions": [
+            {
+                "addonID": "ticket",
+                "description": "ticket for New Years Party",
+                "price": 35.00,
+                "basis": "NYE",
+                "quantity": 1
+            }
+        ],
+        "currencyContext": {
+            "@currencyCode": "USD",
+            "@minorUnit": 2,
+            "@entity": "US"
+        },
+        "preTaxOffer": 989.00,
+        "estimateTaxes": 77.00,
+        "estimateFees": 24.00,
+        "totalCost": 1066.00,
+        "cancellationPolicies": [
+            {
+                "cancelBy": "2015-12-25T16:00",
+                "penalty": 129.00,
+                "description": "May be cancelled without penalty up to 4:00 PM on scheduled day of arrival"
+            }
+        ],
+        "guarantee": "cardOnFile"
+    }
 }
 
 
