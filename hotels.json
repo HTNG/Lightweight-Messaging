@@ -37,8 +37,13 @@
                 "Type": "Fax"
             }
         ],
-        "Position": "35.0433377,-106.6150972",
-        //TODO: address elevation/altitude in the spec, identify existing format spec if possible
+        "Position" : {
+           "type": "Feature",
+           "geometry": {
+              "type": "Point",
+              "coordinates": ["35.0433377,-106.6150972"]
+           },
+        },
         "BestAvailableRate": 120.87
     },
     links: [
