@@ -46,7 +46,7 @@
              },
           },
 
-      links: [
+      "links": [
           {
               "rel": "self",
               "href": "/hotels/ABQBR01"
