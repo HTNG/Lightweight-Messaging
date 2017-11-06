@@ -2,132 +2,132 @@
 	//TODO: remove address from property info
 	//TODO: remove contact numbers from property info
 	//TODO: remove name from spec
-	Code: "",
-	Awards: [
+	"HotelCode": "",
+	"Awards": [
 		//TODO: build out award utility object in spec based on OTA award
 		{
-			Provider: "Travelocity",
-			Rating: "5 stars"
+			"Provider": "Travelocity",
+			"Rating": "5 stars"
 		},
 		{
-			Provider: "Hotels.com",
-			Rating: "4.5 stars"
+			"Provider": "Hotels.com",
+			"Rating": "4.5 stars"
 		}
 	],
 	Amenities: [
 		//TODO: note in spec that these align with an OTA list of amenity codes
 		{
-			Key: "24",
-			Value: "Conference facilities"
+			"Key": "24",
+			"Value": "Conference facilities"
 		},
 		{
-			Key: "32",
-			Value: "Duty free shop"
+			"Key": "32",
+			"Value": "Duty free shop"
 		},
 		{
-			Key: "39",
-			Value: "Florist"
+			"Key": "39",
+			"Value": "Florist"
 		}
 	],
-	Recreation: [
+	"Recreation": [
 		//TODO: update the spec to make this a list of name/value pairs, move from hotel to basic property info
 		{
-			Key: "1",
-			Value: "Archery"
+			"Key": "1",
+			"Value": "Archery"
 		},
 		{
-			Key: "14",
-			Value: "Dart board"
+			"Key": "14",
+			"Value": "Dart board"
 		},
 		{
-			Key: "85",
-			Value: "Skeet shooting"
+			"Key": "85",
+			"Value": "Skeet shooting"
 		}
 	],
-	AccessibilityFeatures: [
+	"AccessibilityFeatures": [
 		//TODO: bifurcate Features attribute in spec
 		{
-			Key: "10",
+			"Key": "10",
 			Value: "Elevators have braille instructions"
 		},
 		{
-			Key: "36",
-			Value: "Wheelchairs available"
+			"Key": "36",
+			"Value": "Wheelchairs available"
 		},
 		{
-			Key: "48",
-			Value: "Walk-in shower"
+			"Key": "48",
+			"Value": "Walk-in shower"
 		}
 	],
-	SecurityFeatures: [{
-			Key: "33",
-			Value: "Parking Area Attendant"
+	"SecurityFeatures": [{
+			"Key": "33",
+			"Value": "Parking Area Attendant"
 		},
 		{
-			Key: "31",
-			Value: "Lighted Walkways"
+			"Key": "31",
+			"Value": "Lighted Walkways"
 		},
 		{
-			Key: "53",
-			Value: "Sprinklers in Hallways"
+			"Key": "53",
+			"Value": "Sprinklers in Hallways"
 		}
 	],
-	CheckInTime: "16:00:00-07:00",
-	CheckOutTime: "11:00:00-07:00",
-	Services: [ //TODO: note in spec that these are related to OTA code list: BUS (Business Service Codes)
+	"CheckInTime": "16:00:00-07:00",
+	"CheckOutTime": "11:00:00-07:00",
+	"Services": [ //TODO: note in spec that these are related to OTA code list: BUS (Business Service Codes)
 		{
-			Key: "48",
-			Value: "Overhead Projector"
+			"Key": "48",
+			"Value": "Overhead Projector"
 		},
 		{
-			Key: "102",
-			Value: "Translation services"
+			"Key": "102",
+			"Value": "Translation services"
 		}
 	],
-	Transportation: [{
-			Identifier: "ABQ",
-			Name: "Albuquerque International Sunport",
-			Distance: {
-				Value: 12,
-				@Unit: "Miles" // TODO: revisit this, check into standard naming convention
+	"Transportation": [{
+			"Identifier": "ABQ",
+			"Name": "Albuquerque International Sunport",
+			"Distance": {
+				"Value": 12,
+				"@Unit": "Miles" // TODO: revisit this, check into standard naming convention
 			}
-			TransportationTypes: [{
-					Key: "3",
-					Value: "Bus",
-					ApproximateCost: 2,
-					TypicalTravelTime: "PT01H30M"
+			"TransportationTypes": [{
+					"Key": "3",
+					"Value": "Bus",
+					"ApproximateCost": 2,
+					"TypicalTravelTime": "PT01H30M"
 				},
 				{
-					Key: "20",
-					Value: "Taxi",
-					ApproximateCost: 12,
-					TypicalTravelTime: "PT30M"
+					"Key": "20",
+					"Value": "Taxi",
+					"ApproximateCost": 12,
+					"TypicalTravelTime": "PT30M"
 				},
 				{
-					Key: "17",
-					Value: "Shuttle",
-					ApproximateCost: 0,
-					TypicalTravelTime: "PT30M"
+					"Key": "17",
+					"Value": "Shuttle",
+					"ApproximateCost": 0,
+					"TypicalTravelTime": "PT30M"
 				}
 			]
 		},
 		{
-			Identifier: "ABQ",
-			Name: "Albuquerque Amtrak Station",
-			Distance: {
-				Value: .1,
-				@Unit: "Miles" // TODO: revisit this, check into standard naming convention
+			"Identifier": "ABQ",
+			"Name": "Albuquerque Amtrak Station",
+			"Distance": {
+				"Value": .1,
+				"@Unit": "Miles" // TODO: revisit this, check into standard naming convention
 			}
-			TransportationTypes: [{
-				Key: "24",
-				Value: "Walk",
-				ApproximateCost: 0,
-				TypicalTravelTime: "PT05M"
+			"TransportationTypes": [{
+				"Key": "24",
+				"Value": "Walk",
+				"ApproximateCost": 0,
+				"TypicalTravelTime": "PT05M"
 			}]
 		}
 	],
-	VendorMessages: "", //TODO: for review,
-	links: [{
+	"VendorMessages": "", //TODO: for review,
+	"links": [{
 			"rel": "self",
 			"href": "/hotels/{hotel.code}/propertyinfo"
 		},
