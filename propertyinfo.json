@@ -24,6 +24,11 @@
 			"Value": "Florist"
 		}
 	],
+	"currencyContext": {
+	    "@currencyCode": "USD",
+	    "@minorUnit": 2,  
+	    "@entity": "US"
+  	},
 	"Recreation": [
 		{
 			"Key": "1",
