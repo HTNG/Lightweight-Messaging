@@ -11,7 +11,6 @@
 		}
 	],
 	"Amenities": [
-		//TODO: note in spec that these align with an OTA list of amenity codes
 		{
 			"Key": "24",
 			"Value": "Conference facilities"
@@ -26,7 +25,6 @@
 		}
 	],
 	"Recreation": [
-		//TODO: update the spec to make this a list of name/value pairs, move from hotel to basic property info
 		{
 			"Key": "1",
 			"Value": "Archery"
@@ -40,8 +38,10 @@
 			"Value": "Skeet shooting"
 		}
 	],
+	"HotelFeatures": [
+		{
+			"Key": "XXXX"
 	"AccessibilityFeatures": [
-		//TODO: bifurcate Features attribute in spec
 		{
 			"Key": "10",
 			Value: "Elevators have braille instructions"
