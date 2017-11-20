@@ -41,7 +41,7 @@
 	"AccessibilityFeatures": [
 		{
 			"Key": "10",
-			Value: "Elevators have braille instructions"
+			"Value": "Elevators have braille instructions"
 		},
 		{
 			"Key": "36",
@@ -67,7 +67,7 @@
 	],
 	"CheckInTime": "16:00:00-07:00",
 	"CheckOutTime": "11:00:00-07:00",
-	"Services": [ //TODO: note in spec that these are related to OTA code list: BUS (Business Service Codes)
+	"Services": [ 
 		{
 			"Key": "48",
 			"Value": "Overhead Projector"
@@ -82,7 +82,7 @@
 			"Name": "Albuquerque International Sunport",
 			"Distance": {
 				"Value": 12,
-				"@Unit": "Miles" // TODO: revisit this, check into standard naming convention
+				"@Unit": "Miles"
 			}
 			"TransportationTypes": [{
 					"Key": "3",
@@ -109,7 +109,7 @@
 			"Name": "Albuquerque Amtrak Station",
 			"Distance": {
 				"Value": .1,
-				"@Unit": "Miles" // TODO: revisit this, check into standard naming convention
+				"@Unit": "Miles"
 			}
 			"TransportationTypes": [{
 				"Key": "24",
