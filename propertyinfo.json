@@ -124,7 +124,13 @@
 			}]
 		}
 	],
-	"VendorMessages": "", //TODO: for review,
+	"VendorMessages": [
+		 {
+			"textItemID": "10234",
+  			"locale": "en-US",
+  			"text": "Hotel pool is closed from December 1 to May 1."
+ 		}
+	], 
 	"links": [{
 			"rel": "self",
 			"href": "/hotels/{hotel.code}/propertyinfo"
