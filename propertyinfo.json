@@ -1,10 +1,6 @@
 {
-	//TODO: remove address from property info
-	//TODO: remove contact numbers from property info
-	//TODO: remove name from spec
 	"HotelCode": "",
 	"Awards": [
-		//TODO: build out award utility object in spec based on OTA award
 		{
 			"Provider": "Travelocity",
 			"Rating": "5 stars"
@@ -14,7 +10,7 @@
 			"Rating": "4.5 stars"
 		}
 	],
-	Amenities: [
+	"Amenities": [
 		//TODO: note in spec that these align with an OTA list of amenity codes
 		{
 			"Key": "24",
