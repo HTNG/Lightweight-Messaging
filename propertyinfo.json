@@ -1,7 +1,6 @@
 {
 	"HotelCode": "",
-	"Awards": [
-		{
+	"Awards": [{
 			"Provider": "Travelocity",
 			"Rating": "5 stars"
 		},
@@ -10,8 +9,7 @@
 			"Rating": "4.5 stars"
 		}
 	],
-	"Amenities": [
-		{
+	"Amenities": [{
 			"Key": "24",
 			"Value": "Conference facilities"
 		},
@@ -25,12 +23,11 @@
 		}
 	],
 	"currencyContext": {
-	    "@currencyCode": "USD",
-	    "@minorUnit": 2,  
-	    "@entity": "US"
-  	},
-	"Recreation": [
-		{
+		"@currencyCode": "USD",
+		"@minorUnit": 2,
+		"@entity": "US"
+	},
+	"Recreation": [{
 			"Key": "1",
 			"Value": "Archery"
 		},
@@ -43,8 +40,7 @@
 			"Value": "Skeet shooting"
 		}
 	],
-	"AccessibilityFeatures": [
-		{
+	"AccessibilityFeatures": [{
 			"Key": "10",
 			"Value": "Elevators have braille instructions"
 		},
@@ -72,8 +68,7 @@
 	],
 	"CheckInTime": "16:00:00-07:00",
 	"CheckOutTime": "11:00:00-07:00",
-	"Services": [ 
-		{
+	"Services": [{
 			"Key": "48",
 			"Value": "Overhead Projector"
 		},
@@ -82,16 +77,14 @@
 			"Value": "Translation services"
 		}
 	],
-	"Transportation": [
-			{
+	"Transportation": [{
 			"Identifier": "ABQ",
 			"Name": "Albuquerque International Sunport",
 			"Distance": {
 				"Value": 12,
 				"@Unit": "Miles"
-			}
-			"TransportationTypes": [
-				{
+			},
+			"TransportationTypes": [{
 					"Key": "3",
 					"Value": "Bus",
 					"ApproximateCost": 2,
@@ -115,9 +108,9 @@
 			"Identifier": "ABQ",
 			"Name": "Albuquerque Amtrak Station",
 			"Distance": {
-				"Value": .1,
+				"Value": 0.1,
 				"@Unit": "Miles"
-			}
+			},
 			"TransportationTypes": [{
 				"Key": "24",
 				"Value": "Walk",
@@ -126,13 +119,11 @@
 			}]
 		}
 	],
-	"VendorMessages": [
-		 {
-			"textItemID": "10234",
-  			"locale": "en-US",
-  			"text": "Hotel pool is closed from December 1 to May 1."
- 		}
-	], 
+	"VendorMessages": [{
+		"textItemID": "10234",
+		"locale": "en-US",
+		"text": "Hotel pool is closed from December 1 to May 1."
+	}],
 	"links": [{
 			"rel": "self",
 			"href": "/hotels/{hotel.code}/propertyinfo"
