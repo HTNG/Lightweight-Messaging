@@ -29,7 +29,7 @@
         {
             "roomPackage": {
                 "packageId": "1234567",
-                "packageCode": "XMAS2017"
+                "packageCode": "XMAS2017",
                 "description": "Christmas holiday package with free breakfast and discount parking.",
                 "guestCounts": {
                     "adults": 1,
