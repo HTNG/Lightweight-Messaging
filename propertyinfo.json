@@ -82,14 +82,16 @@
 			"Value": "Translation services"
 		}
 	],
-	"Transportation": [{
+	"Transportation": [
+			{
 			"Identifier": "ABQ",
 			"Name": "Albuquerque International Sunport",
 			"Distance": {
 				"Value": 12,
 				"@Unit": "Miles"
 			}
-			"TransportationTypes": [{
+			"TransportationTypes": [
+				{
 					"Key": "3",
 					"Value": "Bus",
 					"ApproximateCost": 2,
