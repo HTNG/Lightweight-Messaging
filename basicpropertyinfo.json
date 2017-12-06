@@ -1,5 +1,5 @@
 {
-	"HotelCode": "",
+	"HotelCode": "ABQBR01",
 	"Awards": [{
 			"Provider": "Travelocity",
 			"Rating": "5 stars"
@@ -126,11 +126,11 @@
 	}],
 	"links": [{
 			"rel": "self",
-			"href": "/hotels/{hotel.code}/propertyinfo"
+			"href": "/hotels/ABQBR01/basicpropertyinfo"
 		},
 		{
 			"rel": "hotel",
-			"href": "/hotels/{hotel.code}"
+			"href": "/hotels/ABQBR01"
 		}
 	]
 }
