@@ -1,4 +1,21 @@
 {
+	"metadata": {
+		"version": 0.1,
+		"createTime": "2015-12-01T13:36:47.550-7.00",
+		"modifiedTime": "2015-12-01T13:36:47.550-7.00",
+		"modifiedBy": "CRS",
+		"isDeleted": false,
+		"hmac": "6476df3aac780622368173fe6e768a2edc3932c8",
+		"links": [{
+				"rel": "self",
+				"href": "/hotels/ABQBR01/basicpropertyinfo"
+			},
+			{
+				"rel": "hotel",
+				"href": "/hotels/ABQBR01"
+			}
+		]
+	},
 	"HotelCode": "ABQBR01",
 	"Awards": [{
 			"Provider": "Travelocity",
@@ -123,14 +140,5 @@
 		"textItemID": "10234",
 		"locale": "en-US",
 		"text": "Hotel pool is closed from December 1 to May 1."
-	}],
-	"links": [{
-			"rel": "self",
-			"href": "/hotels/ABQBR01/basicpropertyinfo"
-		},
-		{
-			"rel": "hotel",
-			"href": "/hotels/ABQBR01"
-		}
-	]
+	}]
 }
