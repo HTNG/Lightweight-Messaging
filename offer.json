@@ -25,11 +25,24 @@
         "offerId": "xyzzy",
         "hotelId": "12345",
         "hotelName" : "Banana Resorts",
+        "currencyContext": {
+            "@currencyCode": "USD",
+            "@minorUnit": 2,
+            "@entity": "US"
+        },
         "stayDates": {
             "arrival": "2015-12-25",
             "departure": "2016-01-01"
         },
         "totalRooms": 1,
+            "guestCounts": {
+                "adults": 1,
+                "children": 2,
+                "childAges": [
+                    3,
+                    5
+                ]
+            },
         "guests": [
             {
                 "profile": {
@@ -50,20 +63,6 @@
             "packageId": "1234567",
             "packageCode": "XMAS2017",
             "description": "Christmas holiday package with free breakfast and discount parking.",
-            "guestCounts": {
-                "adults": 1,
-                "children": 2,
-                "childAges": [
-                    3,
-                    5
-                ]
-            },
-            "guests": [
-                {
-                    "profileID": "30dd879c-ee2f-11db-8314-0800200c9a66",
-                    "guestFullName": "Mr. Abe Brown Jr."
-                }
-            ],
             "roomType": {
                 "link": {
                     "rel": "Hotel Room Type",
@@ -80,7 +79,7 @@
                         {
                             "componentId": "ROOM",
                             "description": "Hotel Room Per Night",
-                            "price": 90.00
+                            "price": 120.00
                         },
                         {
                             "componentId": "FBB",
@@ -92,17 +91,17 @@
                             "description": "Nightly Resort Fee",
                             "price": 5.00
                         },
-                        {
-                            "componentId": "parking",
-                            "description": "Daily Parking Fee",
-                            "price": 25.00
-                        }
                     ],
-                    "roomAdd-ons": [
+                    "roomAddons": [
                         {
                             "addonID": "rollaway",
                             "description": "Rollaway Bed",
                             "price": 3.00
+                        }
+                        {
+                            "addon" : "parking",
+                            "description": "Daily Parking Fee",
+                            "price": 25.00
                         }
                     ],
                     "rateRules": [
@@ -123,15 +122,12 @@
                 "quantity": 1
             }
         ],
-        "currencyContext": {
-            "@currencyCode": "USD",
-            "@minorUnit": 2,
-            "@entity": "US"
-        },
+
         "preTaxOffer": 989.00,
         "estimateTaxes": 77.00,
         "estimateFees": 24.00,
         "totalCost": 1066.00,
+        "offerBasis" : "XMAS2017+NYE",
         "cancellationPolicies": [
             {
                 "cancelBy": "2015-12-25T16:00",
