@@ -24,6 +24,7 @@
     "offer": {
         "offerId": "xyzzy",
         "hotelId": "12345",
+        "hotelName" : "Banana Resorts",
         "stayDates": {
             "arrival": "2015-12-25",
             "departure": "2016-01-01"
